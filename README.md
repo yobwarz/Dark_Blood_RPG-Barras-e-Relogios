@@ -27,8 +27,8 @@ O módulo prioriza clareza visual, praticidade e controle do Mestre, integrando-
 https://raw.githubusercontent.com/yobwarz/Dark_Blood_RPG-Saques-e-Mercantes/main/module.json
 ```
 3. Abra seu mundo **Sangue Escuro** e vá em Configurações → Gerenciar módulos.
-4. Ative Sangue Escuro: Barras e Relógios e salve.
-Com o módulo ativo, o Mestre pode criar e gerenciar indicadores visuais para acompanhar o progresso de desafios, recursos e acontecimentos, compartilhando-os com os jogadores conforme necessário.
+4. Ative **Sangue Escuro: Barras e Relógios** e salve.
+Após o recarregamento, o módulo estará ativo. Confira os requisitos de compatibilidade e as instruções de uso na página de cada módulo.
 
 **Requisitos:** Foundry VTT 13+
 >
