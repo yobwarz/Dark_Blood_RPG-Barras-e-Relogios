@@ -1,0 +1,98 @@
+/* Escopo próprio: não altera fichas, regras ou cartões de outros módulos. */
+.application.sepro-window{background:#191d22;color:#e7e8e5;border:1px solid #535b65;border-radius:8px;--color-text-primary:#e7e8e5;--color-text-secondary:#bac2cc;font:16px/1.4 "SE Source Sans 3",sans-serif}
+.sepro-window .window-header{background:#171b20;color:#e7e8e5;border:0}
+.sepro-window .window-content{padding:0;overflow:hidden;background:transparent}
+.sepro-window h2,.sepro-window h3,.sepro-overlay h3{font-family:"SE Spectral",Georgia,serif;color:#e7e8e5;border:0;letter-spacing:0;text-transform:none}
+.sepro-window h2{font-size:21px;margin:0}.sepro-window h3{font-size:18px;margin:0}
+.sepro-window button,.sepro-overlay button{font:600 14px/1.3 "SE Source Sans 3",sans-serif;color:#e7e8e5;background:#252c34;border:1px solid #626d7b;border-radius:4px;height:auto;min-height:30px;padding:5px 9px;box-shadow:none;cursor:pointer}
+.sepro-window button:hover,.sepro-overlay button:hover{background:#394350;border-color:#bac2cc}
+.sepro-window button:disabled,.sepro-overlay button:disabled{cursor:default}
+.sepro-window :is(button,input,select,a):focus-visible,.sepro-overlay :is(button,path):focus-visible{outline:2px solid #d5deeb;outline-offset:3px}
+.sepro-dashboard{display:flex;flex-direction:column;height:100%;min-height:0}
+.sepro-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:14px;border-bottom:1px solid #49515c}
+.sepro-toolbar h2{flex:1 1 100%;font-size:20px}.sepro-list{padding:12px 14px;overflow:auto;min-height:0;scrollbar-width:thin}
+.sepro-gm-card{border:1px solid #49515c;border-radius:6px;padding:14px;margin-bottom:12px;background:#20262d}
+.sepro-source{font-size:13px;line-height:1.4;color:#bac2cc;margin:7px 0 10px}
+.sepro-tools{display:flex;gap:5px;flex-wrap:wrap}.sepro-tools button{font-size:13px;padding:4px 7px}
+.sepro-empty{padding:18px 10px;color:#bac2cc}.sepro-empty h3{color:#e7e8e5}.sepro-empty p{font-size:15px}
+.sepro-notice{padding:12px 14px;background:#3a3226;color:#f2e4c5;font-size:14px}.sepro-notice button{margin-top:8px}
+.sepro-bar{color:#e7e8e5;margin:0;min-width:0;font:16px/1.4 "SE Source Sans 3",sans-serif}
+.sepro-bar-heading{display:flex;gap:9px;align-items:center;margin-bottom:10px;min-width:0}
+.sepro-bar-heading h3{font-size:18px;line-height:1.35;font-weight:600;margin:0;overflow-wrap:anywhere;flex:1;min-width:0}
+.sepro-count{font-size:14px;white-space:nowrap;font-variant-numeric:tabular-nums;color:#d5dbe3}
+.sepro-symbol{width:26px;height:26px;display:grid;place-items:center;flex:none;color:var(--progress-color)}
+.sepro-symbol img,.sepro-unit img,.sepro-mark img,.sepro-marker img{width:100%;height:100%;border:0;object-fit:contain}
+.sepro-graphic{position:relative}
+.sepro-track{height:24px;border:1px solid #75808f;border-radius:14px;background:var(--progress-track);position:relative;overflow:hidden;box-shadow:0 2px 4px #0005}
+.sepro-fill{height:100%;background:var(--progress-color);position:relative;transition:width .18s ease;border-radius:inherit}
+.sepro-texture{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;opacity:.75}
+.sepro-with-marks .sepro-graphic{margin-inline:18px;padding-top:16px;padding-bottom:18px}
+.sepro-marks{position:absolute;left:0;right:0;top:16px;height:24px;pointer-events:none}
+.sepro-mark{position:absolute;top:50%;transform:translate(-50%,-50%);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:2px solid #788493;background:#242b34;color:#a4acb7;filter:grayscale(1);padding:5px;box-sizing:border-box}
+.sepro-mark.reached{filter:none;color:#fff;background:var(--progress-color);border-color:#e7e8e5}
+.sepro-mark img{border-radius:50%}
+.sepro-pips{display:flex;flex-wrap:wrap;gap:6px}
+.sepro-bar .sepro-unit{padding:5px;min-height:34px;width:34px;min-width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border:1px solid #748091;border-radius:5px;background:var(--progress-track);color:#87909d;opacity:1;font-size:21px;box-sizing:border-box;box-shadow:none}
+.sepro-bar .sepro-unit:not(.reached) img{filter:grayscale(1);opacity:.45}
+.sepro-bar .sepro-unit.reached{color:#fff;background:var(--progress-color);border-color:#c6ced8}
+.sepro-segments .sepro-unit{flex:1 1 24px;min-width:24px;width:auto;height:24px;min-height:24px;padding:0}
+.sepro-segments .sepro-unit.reached{box-shadow:0 0 6px color-mix(in srgb,var(--progress-color) 50%,transparent)}
+.sepro-sides{display:flex;justify-content:space-between;gap:12px;font-size:14px;margin:0 18px 9px}
+.sepro-tug{overflow:visible;background:var(--progress-second);margin:0 18px}
+.sepro-tug .sepro-fill{border-radius:14px 0 0 14px}
+.sepro-center-line{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#fff9}
+.sepro-marker{position:absolute;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:34px;height:34px;padding:5px;border:2px solid #d5deeb;border-radius:50%;background:#202630;color:#fff;box-sizing:border-box}
+.sepro-radial{display:block;width:96px;height:96px;margin:0 auto;overflow:visible}
+.sepro-slice{fill:var(--progress-track);stroke:#9aa6b8;stroke-width:1.3;stroke-linejoin:round}
+.sepro-slice.reached{fill:var(--progress-color)}
+.sepro-slice[data-progress-action]{cursor:pointer}.sepro-slice[data-progress-action]:hover{stroke:#fff;stroke-width:2}
+.sepro-hub{fill:#191d22;stroke:#bac2cc;stroke-width:1}
+.sepro-adjust{display:flex;justify-content:flex-end;gap:6px;margin-top:9px}
+.sepro-adjust button{width:30px;height:28px;min-height:28px;padding:2px;font-size:18px}
+.sepro-unavailable{padding:10px;border:1px dashed #9b8a69;color:#e6cfa3;border-radius:4px;font-size:14px}
+/* Sobreposição sem janela nem botão de fechar. Áreas vazias não capturam o mapa. */
+.sepro-overlay{position:fixed;z-index:65;top:76px;right:330px;width:340px;max-width:calc(100vw - 24px);max-height:calc(100vh - 105px);overflow:auto;padding:8px 4px;scrollbar-width:thin;background:transparent;border:0;box-shadow:none;pointer-events:none}
+.sepro-overlay .sepro-bar{padding:10px 6px 14px;margin:0 0 8px;background:transparent;border:0;box-shadow:none;pointer-events:auto}
+.sepro-overlay .sepro-bar-heading h3{text-shadow:0 1px 4px #000,0 0 8px #000;font-size:19px}
+.sepro-overlay .sepro-adjust button{background:#1a2029d9}
+.application.sepro-window.sepro-pinned{background:transparent!important;border:0!important;box-shadow:none!important}
+.sepro-pinned > .window-header{display:none!important}
+.sepro-pinned .sepro-toolbar{border:0;background:#191d22c9;border-radius:5px}
+.sepro-pinned .sepro-gm-card{background:#191d22a6}
+.sepro-editor{height:100%;display:flex;flex-direction:column;min-height:0}
+.sepro-editor-scroll{padding:18px;overflow:auto;min-height:0;scrollbar-width:thin}
+.sepro-editor h2{margin-bottom:16px}
+.sepro-editor fieldset{border:1px solid #49515c;border-radius:5px;padding:12px;margin:14px 0;min-width:0}
+.sepro-editor legend{font-weight:600;font-size:17px;padding:0 6px;color:#e7e8e5}
+.sepro-editor label{display:grid;gap:5px;font-size:15px;line-height:1.4;color:#c9d0d9;margin-bottom:10px}
+.sepro-editor :is(input[type=text],input[type=number],select){width:100%;max-width:100%;min-width:0;height:36px;border:1px solid #8490a1;border-radius:4px;padding:5px 9px;color:#e7e8e5;background:#282f39;font:16px/1.35 "SE Source Sans 3",sans-serif;box-shadow:none;box-sizing:border-box}
+.sepro-editor select option{background:#282f39;color:#e7e8e5}
+.sepro-editor input[type=color]{width:100%;height:36px;border:1px solid #8490a1;background:#282f39;border-radius:4px}
+.sepro-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}
+.sepro-form-grid>p{grid-column:1/-1}
+.sepro-editor p{font-size:14px;line-height:1.5;color:#bac2cc;margin:6px 0 10px}
+.sepro-editor .sepro-check{display:flex;align-items:flex-start;gap:9px}
+.sepro-check input{width:17px;height:17px;flex:none;margin-top:2px}
+.sepro-file{display:flex;align-items:center;gap:6px;min-width:0}
+.sepro-file input{flex:1;min-width:0}.sepro-file button{width:34px;min-width:34px;height:34px;padding:4px}
+.sepro-entry{border-top:1px solid #49515c;padding-top:12px;margin-top:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px}
+.sepro-entry>button{grid-column:1/-1;justify-self:end}
+.sepro-editor-footer{display:flex;justify-content:flex-end;gap:8px;padding:12px 18px;border-top:1px solid #49515c;background:#191d22}
+.sepro-editor-footer button[type=submit]{background:#3c4a58;border-color:#aab6c5}
+.sepro-editor .sepro-error{color:#f0c5b2}.sepro-editor [hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){.sepro-fill{transition:none}}
+@media(max-width:650px){.sepro-form-grid,.sepro-entry{grid-template-columns:1fr}.sepro-toolbar{padding:10px}.sepro-editor-scroll{padding:12px}}
+
+
+/* HUD: cabeçalho e cartões compartilham o mesmo contêiner e as mesmas bordas. */
+.sepro-dashboard .sepro-hud-scroll{flex:1;min-height:0;overflow:auto;padding:12px 14px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px;scrollbar-width:thin}
+.sepro-dashboard .sepro-toolbar{position:sticky;top:0;z-index:2;flex:none;box-sizing:border-box;padding:14px;border:1px solid #49515c;border-radius:6px;background:#20262d;margin:0}
+.sepro-dashboard .sepro-list{flex:none;overflow:visible;padding:0;min-height:auto}
+.sepro-dashboard .sepro-gm-card{box-sizing:border-box;margin:0 0 12px;width:100%}
+.sepro-dashboard .sepro-gm-card:last-child{margin-bottom:0}
+.sepro-dashboard .sepro-notice{flex:none;border-radius:5px}
+.sepro-dashboard .sepro-toolbar button,.sepro-dashboard .sepro-tools button{height:32px;min-height:32px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:6px;line-height:1.2;margin:0}
+.sepro-dashboard .sepro-tools{align-items:center;gap:6px}
+.sepro-dashboard .sepro-bar-heading{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center}
+.sepro-dashboard .sepro-count{text-align:right;justify-self:end}
+.sepro-pinned .sepro-hud-scroll .sepro-toolbar{border:1px solid transparent;background:#191d22d9}

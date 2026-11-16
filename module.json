@@ -1,0 +1,41 @@
+{
+  "id": "sangue-escuro-progresso",
+  "title": "Sangue Escuro: Barras e Relógios",
+  "description": "Seis tipos de indicadores visuais, painel do Mestre, compartilhamento e ligações opcionais com recursos e tempo do mundo.",
+  "version": "0.1.1",
+  "authors": [
+    {
+      "name": "Sangue Escuro — Yob Warz"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "sangue-escuro",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.8.6"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "assets/progresso.css"
+  ],
+  "flags": {
+    "sangue-escuro": {
+      "tipo": "auxiliar"
+    }
+  },
+  "license": "LICENSE",
+  "url": "https://github.com/yobwarz/Dark_Blood_RPG-Barras-e-Relogios",
+  "manifest": "https://raw.githubusercontent.com/yobwarz/Dark_Blood_RPG-Barras-e-Relogios/main/module.json",
+  "download": "https://raw.githubusercontent.com/yobwarz/Dark_Blood_RPG-Barras-e-Relogios/v0.1.1/dist/sangue-escuro-progresso.zip"
+}
